@@ -4,7 +4,12 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    functions.cpp
+    functions.cpp \
+    classes/attack.cpp
 
 HEADERS += \
-    functions.h
+    functions.h \
+    classes/attack.h
+
+DISTFILES += \
+    README.md

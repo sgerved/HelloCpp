@@ -1,5 +1,5 @@
 #include <iostream>
-#include "functions.h"
+#include "classes/attack.h"
 
 using namespace std;
 
@@ -11,25 +11,13 @@ using namespace std;
  */
 int main(int /*argc*/, char /**argv[]*/)
 {
-    if (add(1, 2) == 3) {
-        return 0;
+    cout << "Init Attack" << endl;
+    Attack attack;
+    attack.addAttack("127.0.0.1", "Dos");
+    attack.addAttack("192.168.1.1", "?");
+    for(auto log :  attack.getLogs()) {
+        cout << log << endl;
     }
-    cout << "Welcome to Guess My Number" << endl;
-    int answer = 7;
-    bool keepgoing = true;
-    while (keepgoing) {
-        cout << "Guess: ";
-        int guess;
-        cin >> guess;
-        if (guess < answer) {
-            cout << "Guess is smaller then answer";
-        } else if (guess > answer) {
-            cout << "Guess is larger then answer";
-        } else if (guess == answer) {
-            cout << "Correct guess!";
-            keepgoing = false;
-        }
-        cout << endl;
-    }
+    cout << "End";
     return 0;
 }
