@@ -5,11 +5,13 @@ CONFIG -= qt
 
 SOURCES += main.cpp \
     functions.cpp \
-    classes/attack.cpp
+    classes/attack.cpp \
+    classes/person.cpp
 
 HEADERS += \
     functions.h \
-    classes/attack.h
+    classes/attack.h \
+    classes/person.h
 
 DISTFILES += \
     README.md

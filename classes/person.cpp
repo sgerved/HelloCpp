@@ -1,4 +1,4 @@
-#include "person.h"
+#include "classes/person.h"
 #include <iostream>
 
 using namespace std;

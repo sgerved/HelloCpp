@@ -1,5 +1,6 @@
 #include <iostream>
 #include "classes/attack.h"
+#include "classes/person.h"
 
 using namespace std;
 
@@ -19,5 +20,11 @@ int main(int /*argc*/, char /**argv[]*/)
         cout << log << endl;
     }
     cout << "End";
+
+    Person person("Mismis");
+    person.addWeightLog(123);
+    person.addWeightLog(456);
+    person.addWeightLog(789);
+    cout << person.getWeights() << endl;
     return 0;
 }
