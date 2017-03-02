@@ -6,7 +6,8 @@ Attack::Attack()
 {
 }
 
-void Attack::addAttack(string ip, string type) {
+void Attack::addAttack(string ip, string type)
+{
     string log = "";
     log += "Attack type:\n";
     log += type + "\n";
