@@ -5,8 +5,7 @@ using namespace std;
 
 Person::Person() {}
 
-Person::Person(string nameStr) {
-    name = nameStr;
+Person::Person(string nameStr) : name(nameStr) {
 }
 
 void Person::addWeightLog(int weight) {
