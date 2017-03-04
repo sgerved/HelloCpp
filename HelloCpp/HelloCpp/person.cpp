@@ -4,24 +4,18 @@
 
 using namespace std;
 
-Person::Person() {}
+Person::Person()
+{}
 
 Person::Person(string nameStr) : name(nameStr)
-{
-}
-
-void Person::addWeightLog(int weight)
-{
-    weightLog.push_back(weight);
-    cout << "Weight added: " << weight << endl;
-}
+{}
 
 string Person::getWeights()
 {
     string output = "";
-    for(int weight :  weightLog)
+    for(WeightEntry weight : weightLog)
     {
-        output += weight + ",\n";
+		output += "Weight: " + to_string(weight.getWeight()) + ", date: " + weight.getDate() + "\n";
     }
     return output;
 }

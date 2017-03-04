@@ -1,3 +1,5 @@
-﻿  main.cpp
+﻿  person.cpp
+  main.cpp
+  Generating Code...
   HelloCpp.vcxproj -> C:\Development\QtProjects\HelloCpp\HelloCpp\Debug\HelloCpp.exe
   HelloCpp.vcxproj -> C:\Development\QtProjects\HelloCpp\HelloCpp\Debug\HelloCpp.pdb (Full PDB)

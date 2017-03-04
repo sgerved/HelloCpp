@@ -13,22 +13,31 @@ using namespace std;
  */
 int main(int /*argc*/, char /**argv[]*/)
 {
-    cout << "Init Attack" << endl;
-    Attack attack;
-    attack.addAttack("127.0.0.1", "Dos");
-    attack.addAttack("192.168.1.1", "?");
-    for(auto log :  attack.getLogs())
-    {
-        cout << log << endl;
-    }
-    cout << "End";
-
     Person person("Mismis");
-    person.addWeightLog(123);
-    person.addWeightLog(456);
-    person.addWeightLog(789);
+    person.addWeightLog(WeightEntry(90, "04-03-3017"));
+    person.addWeightLog(WeightEntry(92, "04-02-3017"));
+    person.addWeightLog(WeightEntry(94, "04-01-3017"));
     cout << person.getWeights() << endl;
-	int enter;
-	cin >> enter;
+
+	// Press Enter to exit message, so we can se the output
+	cout << "Press Enter to exit" << endl;
+	getchar();
     return 0;
+}
+
+/*
+* Old code for keeping :)
+*/
+
+void oldCodeFOrKeeping()
+{
+	cout << "Init Attack log" << endl;
+	Attack attack;
+	attack.addAttack("127.0.0.1", "Dos");
+	attack.addAttack("192.168.1.1", "?");
+	for (auto log : attack.getLogs())
+	{
+		cout << log << endl;
+	}
+	cout << "End";
 }
